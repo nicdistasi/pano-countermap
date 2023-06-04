@@ -1,0 +1,72 @@
+html, body {
+  margin: 0; padding: 0;
+  background: black; color: white;
+  font-family: 'Source Code Pro', monospace;
+}
+canvas {
+  display: block;
+}
+
+.counter {
+  font-size: 32px; font-weight: 700;
+}
+
+
+#center-crosshair-cont {
+  position: absolute;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  display: flex;
+  justify-content: center; align-items: center;
+}
+
+#center-crosshair {
+  width: 150px;
+}
+
+#hud-radar {
+  position: absolute;
+  top: 4vh; left: 4vw;
+}
+
+#hud-radar video {
+  width: 160px;
+}
+
+#altitude-info {
+  position: absolute; bottom: 0;
+  margin-left: 4vw; margin-bottom: 4vw;
+}
+
+#altitude-slider {
+  -webkit-appearance: none; appearance: none;
+  height: 50vh; width: 0;
+  margin: 0; padding: 0;
+  -webkit-appearance: slider-vertical;
+}
+
+#altitude-slider-handle {
+  position: absolute;
+  background: white;
+  width: 50px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  pointer-events: none;
+  bottom: 5px; transform: translateX(-25px);
+}
+
+#altitude-counter-img {
+  position: absolute;
+  height: 50vh; /* Slider handle height */
+  pointer-events: none;
+  bottom: 5px;
+}
+
+#difficulty-info {
+  position: absolute;
+  bottom: 4vh; right: 4vw;
+}
+
+#difficulty-info p {
+  text-align: right;
+  margin-right: 20px;
+}
